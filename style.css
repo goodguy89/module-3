@@ -1,6 +1,4 @@
-
-        
-        * {
+* {
             box-sizing: border-box;
         }
 
@@ -9,11 +7,12 @@
         }
 
         h1 {
-            margin: 100px;
+            margin-bottom: 15px;
             text-align: center;
+            color: #ff4532;
             font-family: Helvetica;
             font-weight: bold;
-            font-size: 175%;
+            font-size: 50px;
         }
 
         section {
@@ -30,19 +29,20 @@
         div {
             position: relative;
             background-color: gray;
-            border: 1px solid black;
+            border: 2px solid black;
             width: 100%;
             margin-left: auto;
             margin-right: auto;
             margin-bottom: auto;
+        
         }
 
         .sub1 {
             float: right;
             width: 100px;
             padding: 5px;
-            margin: 0px;
-            border: 1px solid black;
+            margin: -3px -3px 0px;
+            border: 2px solid black;
             text-align: center;
             font-size: 125%;
             font-weight: bold;
@@ -55,8 +55,8 @@
             color: white;
             width: 100px;
             padding: 5px;
-            margin: 0px;
-            border: 1px solid black;
+            margin: -3px -3px 0px;
+            border: 2px solid black;
             text-align: center;
             font-size: 125%;
             font-weight: bold;
@@ -69,8 +69,8 @@
             float: right;
             width: 100px;
             padding: 5px;
-            margin: 0px;
-            border: 1px solid black;
+            margin: -3px -3px 0px;
+            border: 2px solid black;
             text-align: center;
             font-size: 125%;
             font-weight: bold;
@@ -84,14 +84,21 @@
             background-color: gray;
             font-family: Helvetica;
             color: black;
-            margin: 0px;
+            margin: 1px;
             height: 200px;
             overflow: auto;
         }
-
+    
         .row {
+            display: flex;
+            background-color: white;
+            border: 0px;
             width: 90%;
+            margin: 0 auto;
+            flex-wrap: wrap;
+          justify-content: center;
         }
+
 
         /*desktop version*/
         @media (min-width: 992px) {
@@ -108,6 +115,7 @@
                 width: 50%;
                 margin-left: auto;
                 margin-right: auto;
+                display: block;
             }
 
             .column-md-12 {
